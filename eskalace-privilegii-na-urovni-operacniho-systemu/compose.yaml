@@ -1,0 +1,51 @@
+version: '3.3'
+
+services:
+  machine1:
+    image: sudin0/escalation-os-machine1
+    hostname: Machine1
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.11
+
+  machine2:
+    image: sudin0/escalation-os-machine2
+    hostname: Machine2
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.23
+
+  machine3:
+    image: sudin0/escalation-os-machine3
+    hostname: Machine3
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.36
+
+  machine4:
+    image: sudin0/escalation-os-machine4
+    hostname: Machine4
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.47
+
+  machine5:
+    image: sudin0/escalation-os-machine5
+    hostname: Machine5
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.58
+
+  machine6:
+    image: sudin0/escalation-os-machine6
+    hostname: Machine6
+    networks:
+      labnetwork:
+        ipv4_address: 192.168.27.69
+
+networks:
+  labnetwork:
+    ipam:
+      driver: default
+      config:
+        - subnet: "192.168.27.0/24"
