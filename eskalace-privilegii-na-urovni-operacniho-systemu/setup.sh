@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if [ ! -f "compose.yaml" ]; then
+  echo "compose.yaml nebyl nalezen."
+  exit 1
+fi
+
 sudo apt-get update
 
 sudo apt install -y docker.io

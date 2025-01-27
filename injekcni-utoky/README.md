@@ -6,4 +6,4 @@ Stáhněte si soubor **juice-shop.sh**
 
     
     chmod +x juice-shop.sh
-    ./juiceshop.sh
+    ./juice-shop.sh
