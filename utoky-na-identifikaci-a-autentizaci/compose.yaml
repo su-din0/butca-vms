@@ -1,0 +1,16 @@
+services:
+  juice-shop:
+    image: bkimminich/juice-shop:v17.1.1
+    container_name: juice-shop
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=ic2
+      - CTF_KEY=W6FEu7PnrMCHb3Y
+    volumes:
+      - ./ic2.yml:/juice-shop/config/ic2.yml
+      - ./images/ic2_shop_logo.png:/juice-shop/frontend/dist/frontend/assets/public/images/ic2_shop_logo.png
+      - ./images/favicon.ico:/juice-shop/frontend/dist/frontend/assets/public/favicon.ico
+      - ./images/products:/juice-shop/frontend/dist/frontend/assets/public/images/products
+      - ./images/uploads:/juice-shop/frontend/dist/frontend/assets/public/images/uploads
+    restart: unless-stopped

@@ -1,0 +1,129 @@
+application:
+  logo: ic2_shop_logo.png
+  favicon: favicon.ico
+  showVersionNumber: false
+  showGitHubLinks: false
+  localBackupEnabled: false
+  welcomeBanner:
+    showOnFirstStart: false
+  domain: ic2-sh.op
+  name: IC2 Shop
+  theme: purple-green
+  altcoinName: ICoin
+  privacyContactEmail: donotreply@ic2-sh.op
+  customMetricsPrefix: icshop
+  chatBot:
+    name: 'Ice'
+  securityTxt:
+    contact: 'mailto:donotreply@ic2-sh.op'
+challenges:
+  showHints: false
+  safetyMode: enabled
+  showFeedbackButtons: false
+hackingInstructor:
+  isEnabled: false
+ctf:
+  showFlagsInNotifications: true
+products:
+# required products (can be customized)
+  -
+    name: 'Cable'
+    description: 'O-Saft is an easy to use tool to show information about SSL certificate and tests the SSL connection according given list of ciphers and various SSL configurations.'
+    price: 0.01
+    image: cable.jpg
+    urlForProductTamperingChallenge: 'https://www.owasp.org/index.php/O-Saft'
+  # hidden
+  -
+    name: 'Christmas Super-Surprise-Box (2014 Edition)'
+    description: 'Contains a random selection of 10 bottles (each 500ml) of our tastiest juices and an extra fan shirt for an unbeatable price!'
+    price: 29.99
+    image: undefined.jpg
+    useForChristmasSpecialChallenge: true
+  # hidden
+  -
+    name: 'Rippertuer Special Juice'
+    description: 'Contains a magical collection of the rarest fruits gathered from all around the world, like Cherymoya Annona cherimola, Jabuticaba Myrciaria cauliflora, Bael Aegle marmelos... and others, at an unbelievable price! <br/><span style="color:red;">This item has been made unavailable because of lack of safety standards.</span>'
+    price: 16.99
+    image: undefined.jpg
+    keywordsForPastebinDataLeakChallenge:
+      - hueteroneel
+      - eurogium edule
+  -
+    name: 'Console'
+    description: 'Power up your play with this high-performance gaming console. Stunning graphics, fast load times, and an extensive game library.'
+    price: 44.99
+    image: console.jpg # Exif metadata contains "OpenSCAD" as subtle hint...
+    fileForRetrieveBlueprintChallenge: JuiceShop.stl # ...to blueprint file type
+    exifForBlueprintChallenge:
+      - OpenSCAD
+# end of required products
+  -
+    name: 'Keyboard'
+    description: 'Compact, responsive, and stylish, this wireless mechanical keyboard offers tactile keys, customizable RGB lighting, and long battery life for ultimate typing comfort. Perfect for work and play.'
+    price: 16.99
+    image: keyboard.jpg
+    reviews:
+      - { text: 'Excellent feel and responsiveness, truly satisfying to type on!', author: jim }
+      - { text: 'I really appreciate the sleek design. It looks great on my desk.', author: stan}
+  -
+    name: 'Pen'
+    description: 'Experience effortless writing with this sleek gel pen, featuring quick-drying, smudge-free ink and a comfortable grip. Perfect for notes, journaling, and daily use.'
+    price: 2.99
+    image: pen.jpg
+    reviews:
+      - { text: 'Just a pen...', author: morty }
+  -
+    name: 'Headphones'
+    description: 'Enjoy rich, immersive sound with these wireless headphones. Featuring noise cancellation, a comfortable fit, and long battery life—perfect for music, calls, and travel.'
+    price: 7.99
+    image: headphones.jpg
+    reviews:
+      - { text: 'Tooo much base for me', author: bender }
+  -
+    name: 'Mouse'
+    description: 'Reliable and responsive, this mouse provides precise tracking and comfortable grip for extended use. Ideal for both work and gaming setups.'
+    price: 14.99
+    image: mouse.jpg
+    reviews:
+      - { text: 'Smooth, precise, and comfortable for extended use. Perfect addition!', author: john }
+  -
+    name: 'Into the wild'
+    description: 'Unplug and reconnect with nature on this off-grid journey. Leave electronics behind, camp under stars, and embrace the simplicity of the wild.'
+    price: 30.99
+    image: trip.jpg
+    reviews:
+      - { text: 'I bought one for my older brother, and judging by his photos, he’s really enjoying it', author: jim }
+  -
+    name: 'Controller'
+    description: 'Ergonomic and precise, this wired controller offers responsive gameplay and a comfortable grip for extended sessions.'
+    price: 25.99
+    image: controller.jpg
+  -
+    name: 'Bitcoin'
+    description: 'Own 1 Bitcoin at an unbeatable price! Secure, verified, and ready for immediate transfer. Don not miss out on this incredible opportunity.'
+    price: 89.99
+    image: bitcoin.jpg
+    reviews:
+      - { text: 'Do not buy this!!', author: bender }
+  -
+    name: 'Robot'
+    description: 'Discover the allure of this mysterious, unidentified robot.'
+    price: 105.99
+    image: robot.jpg
+    reviews:
+      - { text: 'I haven’t started it up yet; I’ll admit I’m a little nervous to see what it does', author: emma }
+memories:
+  -
+    image: 'setup.jpg'
+    caption: 'Loving my setup with all the peripherals from you!'
+    geoStalkingMetaSecurityQuestion: 14
+    geoStalkingMetaSecurityAnswer: 'Daniel Boone National Forest'
+  -
+    image: 'robot_flower.jpg'
+    caption: 'That mysterious robot I bought surprised me with flowers today...'
+    geoStalkingVisualSecurityQuestion: 10
+    geoStalkingVisualSecurityAnswer: 'ITsec'
+  -
+    image: 'camping.jpg'
+    caption: 'So grateful for the nature getaway my brother gave me. It was the perfect break from all the screens. (George Samuel Kirk)'
+    user: 'jim'
